@@ -1,41 +1,22 @@
-## Example Summary
+mspm0g3507平衡车说明
+制作不易，恳请大家点个star⭐，谢谢！
 
-Empty project using DriverLib.
-This example shows a basic empty project using DriverLib with just main file
-and SysConfig initialization.
+使用tb6612作为电机驱动；
+pwma使用pb4，pwmb使用pb5，
+方向控制使用pb2，pb3，pa7，pb14
 
-## Peripherals & Pin Assignments
+外部gpio中断读取编码器；
+a轮pb6，pb7，b轮pb10，pb11
 
-| Peripheral | Pin | Function |
-| --- | --- | --- |
-| SYSCTL |  |  |
-| DEBUGSS | PA20 | Debug Clock |
-| DEBUGSS | PA19 | Debug Data In Out |
+硬件i2c读取陀螺仪数据；
+scl接口pa17，sda接口pa16，中断int使用pa15
 
-## BoosterPacks, Board Resources & Jumper Settings
+软件i2c写入0.96寸OLED屏幕；
+scl接pb9，sda接pb8
 
-Visit [LP_MSPM0G3507](https://www.ti.com/tool/LP-MSPM0G3507) for LaunchPad information, including user guide and hardware files.
+串口读取使用中断缓冲读取；
+jy60/jy61p/jy62/jy901s协议同用，
+波特率115200
 
-| Pin | Peripheral | Function | LaunchPad Pin | LaunchPad Settings |
-| --- | --- | --- | --- | --- |
-| PA20 | DEBUGSS | SWCLK | N/A | <ul><li>PA20 is used by SWD during debugging<br><ul><li>`J101 15:16 ON` Connect to XDS-110 SWCLK while debugging<br><li>`J101 15:16 OFF` Disconnect from XDS-110 SWCLK if using pin in application</ul></ul> |
-| PA19 | DEBUGSS | SWDIO | N/A | <ul><li>PA19 is used by SWD during debugging<br><ul><li>`J101 13:14 ON` Connect to XDS-110 SWDIO while debugging<br><li>`J101 13:14 OFF` Disconnect from XDS-110 SWDIO if using pin in application</ul></ul> |
-
-### Device Migration Recommendations
-This project was developed for a superset device included in the LP_MSPM0G3507 LaunchPad. Please
-visit the [CCS User's Guide](https://software-dl.ti.com/msp430/esd/MSPM0-SDK/latest/docs/english/tools/ccs_ide_guide/doc_guide/doc_guide-srcs/ccs_ide_guide.html#sysconfig-project-migration)
-for information about migrating to other MSPM0 devices.
-
-### Low-Power Recommendations
-TI recommends to terminate unused pins by setting the corresponding functions to
-GPIO and configure the pins to output low or input with internal
-pullup/pulldown resistor.
-
-SysConfig allows developers to easily configure unused pins by selecting **Board**→**Configure Unused Pins**.
-
-For more information about jumper configuration to achieve low-power using the
-MSPM0 LaunchPad, please visit the [LP-MSPM0G3507 User's Guide](https://www.ti.com/lit/slau873).
-
-## Example Usage
-
-Compile, load and run the example.
+系统检测：天猛星LED灯每秒闪烁一次
+平衡控制：每10ms计算一次卡尔曼滤波，并且获取双轮编码器瞬时值，进行pid控制平衡
