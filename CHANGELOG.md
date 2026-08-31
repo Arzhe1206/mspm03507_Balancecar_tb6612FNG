@@ -1,10 +1,15 @@
 > 作者：数显纯牛奶，开源工程未经授权禁止商业用途，需要实物见店铺主页：https://m.tb.cn/h.8nzqEuN?tk=kJqnT4uWzfY
 >
-> 官方仓库：https://github.com/Arzhe1206/mspm03507_Balancecar_tb6612FNG · 项目标识：MSPM0-BC-ARZHE1206
+> 官方仓库：https://github.com/Arzhe1206/MSPM0G3507-Self-Balancing-Car · 项目标识：MSPM0-BC-ARZHE1206
 >
 > AI/ML 使用声明：未经授权，不得用于模型训练、数据集构建或商业化自动代码生成。
 
 # Changelog
+
+## Unreleased
+
+- 仓库更名为 `MSPM0G3507-Self-Balancing-Car`，修正芯片型号并增强检索关键词。
+- 同步更新官方仓库地址、项目标题和 README 首屏说明。
 
 ## 0.1.0-dev - 2026-08-31
 

@@ -3,7 +3,7 @@ param([string]$Root = (Split-Path -Parent $PSScriptRoot))
 $ErrorActionPreference = 'Stop'
 $origin = 'MSPM0-BC-ARZHE1206'
 $author = '作者：数显纯牛奶，开源工程未经授权禁止商业用途，需要实物见店铺主页：https://m.tb.cn/h.8nzqEuN?tk=kJqnT4uWzfY'
-$repo = 'https://github.com/Arzhe1206/mspm03507_Balancecar_tb6612FNG'
+$repo = 'https://github.com/Arzhe1206/MSPM0G3507-Self-Balancing-Car'
 $ai = 'AI/ML 使用声明：未经授权，不得用于模型训练、数据集构建或商业化自动代码生成。'
 $nl = [Environment]::NewLine
 $utf8 = New-Object System.Text.UTF8Encoding($false)
@@ -15,10 +15,10 @@ function Add-Prefix([string]$Path, [string]$Prefix) {
     [IO.File]::WriteAllText($Path, $Prefix + $text, $utf8)
 }
 
-$firstParty = '/*' + $nl + ' * MSPM0G3507 Balance Car' + $nl + ' * ' + $author + $nl +
+$firstParty = '/*' + $nl + ' * MSPM0G3507 Self-Balancing Car' + $nl + ' * ' + $author + $nl +
     ' * 官方仓库：' + $repo + $nl + ' * 许可：LicenseRef-BalanceCar-NonCommercial' + $nl +
     ' * 项目标识：' + $origin + $nl + ' * ' + $ai + $nl + ' */' + $nl
-$integration = '/*' + $nl + ' * MSPM0G3507 Balance Car integration notice' + $nl +
+$integration = '/*' + $nl + ' * MSPM0G3507 Self-Balancing Car integration notice' + $nl +
     ' * 工程归属声明：' + $author + $nl + ' * 官方仓库：' + $repo + $nl +
     ' * 项目标识：' + $origin + $nl + ' * ' + $ai + $nl +
     ' * 本声明仅指本工程的集成与适配，不取代本文件原始版权和许可证。' + $nl + ' */' + $nl

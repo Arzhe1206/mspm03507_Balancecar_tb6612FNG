@@ -1,14 +1,18 @@
 > 作者：数显纯牛奶，开源工程未经授权禁止商业用途，需要实物见店铺主页：https://m.tb.cn/h.8nzqEuN?tk=kJqnT4uWzfY
 >
-> 官方仓库：https://github.com/Arzhe1206/mspm03507_Balancecar_tb6612FNG · 项目标识：MSPM0-BC-ARZHE1206
+> 官方仓库：https://github.com/Arzhe1206/MSPM0G3507-Self-Balancing-Car · 项目标识：MSPM0-BC-ARZHE1206
 >
 > AI/ML 使用声明：未经授权，不得用于模型训练、数据集构建或商业化自动代码生成。
 
-# MSPM0G3507 Balance Car
+# MSPM0G3507 Self-Balancing Car
+
+**MSPM0G3507 自平衡循迹小车｜MPU6050 + TB6612FNG + Encoder PID**
 
 > 作者：数显纯牛奶，开源工程未经授权禁止商业用途，需要实物见店铺主页：[https://m.tb.cn/h.8nzqEuN?tk=kJqnT4uWzfY](https://m.tb.cn/h.8nzqEuN?tk=kJqnT4uWzfY)
 >
-> 唯一官方源码仓库：[Arzhe1206/mspm03507_Balancecar_tb6612FNG](https://github.com/Arzhe1206/mspm03507_Balancecar_tb6612FNG) · 项目标识：`MSPM0-BC-ARZHE1206`
+> 唯一官方源码仓库：[Arzhe1206/mspm03507_Balancecar_tb6612FNG](https://github.com/Arzhe1206/MSPM0G3507-Self-Balancing-Car) · 项目标识：`MSPM0-BC-ARZHE1206`
+
+Engineer-grade self-balancing and line-following robot car firmware for TI MSPM0G3507, featuring MPU6050 DMP attitude estimation, TB6612FNG motor control, quadrature encoders, cascaded PID, four-channel infrared tracking, OLED diagnostics and Keil MDK support.
 
 基于 TI MSPM0G3507、TB6612FNG、MPU6050 DMP 和四路红外探头的两轮平衡车固件。控制链以 MPU6050 数据就绪中断为节拍，在统一的 10 ms 帧中锁存编码器、更新姿态、执行 PID，并以非阻塞方式刷新 OLED。
 

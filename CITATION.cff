@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this project for permitted noncommercial work, cite the official repository and author."
-title: "MSPM0G3507 Balance Car"
+title: "MSPM0G3507 Self-Balancing Car"
 version: "0.1.0-dev"
 date-released: 2026-08-31
 authors:
   - name: "数显纯牛奶"
-repository-code: "https://github.com/Arzhe1206/mspm03507_Balancecar_tb6612FNG"
+repository-code: "https://github.com/Arzhe1206/MSPM0G3507-Self-Balancing-Car"
 license: "LicenseRef-BalanceCar-NonCommercial"
