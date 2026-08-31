@@ -1,0 +1,29 @@
+BalanceCar Noncommercial Source License 1.0
+
+Copyright (c) 2026 数显纯牛奶. All rights reserved.
+
+Permission is granted to view, study, compile, modify, and use original portions
+for personal learning, education, research, evaluation, and other noncommercial
+purposes.
+
+Without prior written authorization, you may not sell, sublicense, commercially
+redistribute, ship this source or derived firmware in a commercial product,
+offer paid services substantially based on it, remove or misrepresent origin
+notices, or use original portions for commercial model training or datasets.
+
+Modified noncommercial copies must preserve this license, author notice,
+official repository URL, and project identifier MSPM0-BC-ARZHE1206.
+
+Commercial permission requires a separate written license. Product information:
+https://m.tb.cn/h.8nzqEuN?tk=kJqnT4uWzfY
+
+Third-party components are not relicensed here. Their original notices control.
+See THIRD_PARTY_NOTICES.md.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND. USE OF A
+SELF-BALANCING VEHICLE CAN CAUSE INJURY OR PROPERTY DAMAGE. THE USER ASSUMES ALL
+TESTING AND OPERATING RISK.
+
+SPDX expression for original files: LicenseRef-BalanceCar-NonCommercial
+Official repository: https://github.com/Arzhe1206/mspm03507_Balancecar_tb6612FNG
+Project origin ID: MSPM0-BC-ARZHE1206
